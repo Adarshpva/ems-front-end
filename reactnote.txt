@@ -1,0 +1,96 @@
+
+
+
+
+             REACT -FRont End echmology (Library)
+    .........................................................
+
+   commands
+..............
+
+1. create project:npx create-react-app projectname
+2. to run  project:npm start
+3. intall material ui : npm install @mui/material @emotion/react @emotion/styled
+4. Install react-bootstrap
+5. install react-router-dom -npm i react-router-dom
+6. intall REDUX : npm i redux react-redux redux-thunk
+7. install REDUX TOOLKIT: npm i @reduxjs/toolkit  react-redux
+8. install axios : npm i axios
+9. install react-select : npm i react-select
+10. install react-toast: npm i react-toastify
+
+
+
+   features
+..............
+
+1.component based approach
+2.JSX (javascript xml)
+3.virtual dom
+4.fast
+5.front and difference
+
+
+       Angular                 React                 vue   
+...............................................................
+
+   1.Framework                Library               Framework
+       -google                   -facebook             -open source
+   2. Typescript               javascript            javascript
+   3. Real Dom                virtual Dom           virtual Dom
+   4. Two Way binding         one way binding       two way binding
+
+   6. state : used to store data, and share it other component(parent to child)
+         - create a stste using usestate
+      const[state-name, function name to charge state value] = useState(initial-value)
+         -to update state : using state upadate function where pass the update value as argument
+         - to share state from parent to child : using props
+
+   
+
+   7. components: 2 types of component (create a js file with file name start with capital letter)
+         - class based component / stateful component : 
+         - functional based component  / stateless component :
+
+   8. React Hooks
+        -useState(): to create user defined state  in functioal component
+        -useEffect(): allow you to perform side efect in our component. if a component change another also chage
+        - useParams(): get path parameter from route associate with a component.
+        - useNavigate(): used to redirect from one page to another
+        -useDispatch(): dispatch by component
+        -useSelector(): selected updated state from store to component
+        -useContext():that lets you read and subscribe to context from your component
+
+
+
+   9. conditional rendering
+   10. path set up for component 
+     -- package contains bindings for using React Router in web applications. - react-router-dom
+     -- to route all app routes - browser router
+    -- create path for more items  - Routes
+    -- create path for 1 component  - route
+    - Link: used to redirect from one pagge to aother
+    -useParams : get path parameter from route associate with a component
+   11. REDUX: state mangement in react
+       - to avoid props drilling(passing propes to inner child)
+        -basic
+          - store: global
+              -provide store to app
+          - action: define logic to update state 
+              - it should dispatch by component using useDispatch hook
+          - reducer: update state
+          -component: select updated state from store using useSelector hook
+
+   12. REDUX TOOLKIT: standard way to write redux logic  
+           - install toolkit
+           -store
+           -createSlice: we can both reducer and action 
+   13. component Life Cycle
+           -Mounting: when component added to dom
+           -updating: when state/props updated in component
+           -unMounting: component id removed from the dom
+    14. Context api: avoid props drilling ,share data between components
+           -create context:
+                - create state i the context and provide it into all children
+           - use context: to access the context in a component
+
